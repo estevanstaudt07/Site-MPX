@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+</html>
+
+<body>
+<header>
+    <div class="container-fluid fluid-acessibilidade">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-acessibilidade">
+                    <ul class="acessibilidade-buttons">
+                        <li><a href="#skip-navigation">Aumentar Fonte</a></li>
+                        <li><a href="#font-size-increase">Alto contraste</a></li>
+                        <li><a href="#font-size-decrease">Mapa do site</a></li>
+                        <li><a href="#high-contrast">Fonte para dislexia</a></li>
+                        <li><a href="#high-contrast">Entenda a Acessibilidade</a></li>
+                        <li><a href="#high-contrast">Pesquise no Site</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="fluid-logo">
+            <div class="container">
+                <div class="row">
+                    <!-- Coluna da imagem à esquerda -->
+                    <div class="col-12 col-md-3">
+                        <img class="img-fluid" src="img/Ouvidoria.png">
+                    </div>
+
+                    <!-- Coluna do conteúdo à direita -->
+                    <div class="col-12 col-md-9">
+                        <div class="row justify-content-end">
+
+                            <!-- Seção 1 -->
+                            <div class="col-12 col-md-3">
+                                <div class="card card-links">
+                                    <div>
+                                        <img class="img-fluid" src="img/ouv.png">
+                                        <div>
+                                            <span>
+                                                Ouvidoria e-SIC
+                                            </span>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+
+                            <!-- Seção 2 -->
+                            <div class="col-12 col-md-3">
+                                <div class="card card-links">
+                                    <div>
+                                        <img class="img-fluid" src="img/transp.svg">
+                                        <div>
+                                            <span>
+                                                Portal Transparencia
+                                            </span>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+
+                            <!-- Seção 3 -->
+                            <div class="col-12 col-md-3">
+                                <div class="card card-links">
+                                    <div>
+                                        <img class="img-fluid" src="img/carta.svg">
+                                        <div>
+                                            <span>
+                                                Carta de Serviços ao Cidadão
+                                            </span>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="fluid-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 menu-topo">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav menu-link">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarPrefeitura" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Prefeitura
+                                            <i class="fas fa-chevron-down">
+
+                                            </i>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarPrefeitura">
+                                            <li><a class="dropdown-item" href="#">Histórico</a></li>
+                                            <li><a class="dropdown-item" href="#">Gestão</a></li>
+                                            <li><a class="dropdown-item" href="#">Estrutura Administrativa</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarMunicipio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Município
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarMunicipio">
+                                            <li><a class="dropdown-item" href="#">Dados Gerais</a></li>
+                                            <li><a class="dropdown-item" href="#">Geografia</a></li>
+                                            <li><a class="dropdown-item" href="#">História</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarSecretarias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Secretarias
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarSecretarias">
+                                            <li><a class="dropdown-item" href="#">Educação</a></li>
+                                            <li><a class="dropdown-item" href="#">Saúde</a></li>
+                                            <li><a class="dropdown-item" href="#">Administração</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Notícias</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarImprensa" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Imprensa
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarImprensa">
+                                            <li><a class="dropdown-item" href="#">Releases</a></li>
+                                            <li><a class="dropdown-item" href="#">Galeria de Fotos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarContato" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Contato
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarContato">
+                                            <li><a class="dropdown-item" href="#">SIC-Serviço de informação ao cidadão</a></li>
+                                            <li><a class="dropdown-item" href="#">Telefones úteis</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	
+</header>
+    
+    <main>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-serviço">
+                        <div class="col-serviço">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/vitrine.png" class="d-block w-100" alt="Imagem 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/vitrine.png" class="d-block w-100" alt="Imagem 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/vitrine.png"class="d-block w-100" alt="Imagem 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="card-serviços">
+                        </div>
+                    </div> 
+                </div> 
+        </div> 
+        <div class="container-fluid">
+            <div class="fluid-serviços">
+                <div class="container">
+                    <div class="row">
+                        <!-- Serviço 1 -->
+                        <div class="col-12 col-md-2">
+                            <div class="cards-serviços">
+                                <div>
+                                    <span class="serviço1">Serviço 1</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Serviço 2 -->
+                        <div class="col-12 col-md-2">
+                            <div class="cards-serviços">
+                                <div>
+                                    <span class="serviço1">Serviço 2</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Seção 3 -->
+                        <div class="col-12 col-md-2">
+                            <div class="cards-serviços">
+                                    <div>
+                                        <span class="serviço1">Serviço 3</span>
+                                    </div>
+                            </div>
+                        </div>
+        
+                        <!-- Seção 4 -->
+                        <div class="col-12 col-md-2">
+                            <div class="cards-serviços">
+                                    <div>
+                                        <span class="serviço1">Serviço 4</span>
+                                    </div>
+                            </div>
+                        </div>
+        
+                        <!-- Seção 5 -->
+                        <div class="col-12 col-md-2">
+                            <div class="cards-serviços">
+                                    <div>
+                                        <span class="serviço1">Serviço 5</span>
+                                    </div>
+                            </div>
+                        </div>
+        
+                        <!-- Seção 6 -->
+                        <div class="col-12 col-md-2">
+                            <div class="cards-serviços">
+                                <div>
+                                    <div>
+                                        <span class="serviço1">Serviço 6</span>
+                                    </div>
+                            </div>
+                        </div>
+        
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+
+         <!-- Seção de Notícias -->
+    
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="Noticias">Notícias</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+ <!-- Imagens abaixo -->
+<div class="container">
+    <div class="row">
+        <!-- Primeiro Card -->
+        <div class="col-12 col-md-6">
+            <div class="card card-galeria position-relative">
+                <p class="data-bg position-absolute">13/04/2020</p>
+                <img src="img/foto-center.png" alt="Imagem 1" class="img-fluid">
+                <div class="titulo-container">
+                    <h2 class="títuloimagem1">Ted Sarandos nomeado co-CEO da Netflix</h2>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Segundo Card -->
+        <div class="col-12 col-md-6">
+            <div class="card card-galeria position-relative">
+                <p class="data-bg position-absolute">14/04/2020</p>
+                <img src="img/foto-center2.png" alt="Imagem 2" class="img-fluid">
+                <div class="titulo-container">
+                    <h2 class="títuloimagem2">O aplicativo de meditação Calm está tendo seu próprio programa HBO Max cheio de celebridades</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+<!-- Segunda Seção de Notícias -->
+<div class="container-fluid py-4">
+    <div class="container">
+        <div class="card shadow custom-card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-md-3 position-relative mb-4">
+                        <p class="data-bg2 position-absolute">15/04/2020</p>
+                        <img src="img/gelo.png" alt="Imagem Notícia 1" class="img-fluid">
+                        <div class="titulo-container">
+                            <h2 class="titulo-imagem11">Spaceflight Inc. lança novo veículo de transferência orbital para foguete via satélite</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 position-relative mb-4">
+                        <p class="data-bg2 position-absolute">16/04/2020</p>
+                        <img src="img/deserto.png" alt="Imagem Notícia 2" class="img-fluid">
+                        <div class="titulo-container">
+                            <h2 class="titulo-imagem12">17 filmes icônicos com classificações surpreendentemente baixas</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 position-relative mb-4">
+                        <p class="data-bg2 position-absolute">16/04/2020</p>
+                        <img src="img/cidade1.png" alt="Imagem Notícia 3" class="img-fluid">
+                        <div class="titulo-container">
+                            <h2 class="titulo-imagem13">Por que as ações da Netflix caíram 10%</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 position-relative mb-4">
+                        <p class="data-bg2 position-absolute">17/04/2020</p>
+                        <img src="img/praia.png" alt="Imagem Notícia 4" class="img-fluid">
+                        <div class="titulo-container">
+                            <h2 class="titulo-imagem14">Apple abre outra megaloja na China em meio às críticas de William Barr</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Botão "Veja mais notícias" -->
+        <div class="row">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 col-lg-3 col-btn">
+                        <a href="#"class="btn">Veja mais notícias</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--banner-->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-12 col-md-6 position-relative">
+                    <img src="img/banner-01.png" alt="Nova Imagem 1" class="imgbanner-01">
+                </div>
+    
+                <div class="col-12 col-md-6 position-relative">
+                    <img src="img/banner-01.png" alt="Nova Imagem 2" class="imgbanner-02">
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Seção de Galeria de Fotos -->
+<div class="container-fluid">
+<section class="secao-galeria-fotos">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-box-vinheta-fotos">
+            <span class="vinheta">
+                Galeria de Fotos
+            </span>
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="cartao-galeria">
+            <div class="imagem-container">
+              <img src="img/cidade.png" alt="Vista de Vasco" class="img-fluid cartao-imagem">
+              <div class="data-publicacao">17/04/2020</div>
+            </div>
+            <div class="cartao-conteudo">
+              <a href="#" class="cartao-link">
+                <h3 class="cartao-titulo">Iniciando seu blog de viagem com o Vasco</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="cartao-galeria">
+            <div class="imagem-container">
+              <img src="img/motocross.png" alt="Motociclista saltando" class="img-fluid cartao-imagem">
+              <div class="data-publicacao">19/04/2020</div>
+            </div>
+            <div class="cartao-conteudo">
+              <a href="#" class="cartao-link">
+                <h3 class="cartao-titulo">Como escolher o cliente certo para o seu negócio fotográfico?</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="cartao-galeria">
+            <div class="imagem-container">
+              <img src="img/ceu.png" alt="Céu com nuvens" class="img-fluid cartao-imagem">
+              <div class="data-publicacao">13/04/2020</div>
+            </div>
+            <div class="cartao-conteudo">
+              <a href="#" class="cartao-link">
+                <h3 class="cartao-titulo">Como construir uma comunidade leal online e offline</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Botões de veja mais galerias -->
+      <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-lg-3 col-btn">
+                    <a href="#"class="btn">Veja mais galerias</a>
+                </div>
+        </div>
+    </div>
+    </div>
+  </section>
+</div>
+
+         <!-- Seção de Calendário de Eventos -->
+    
+         <div class="container-fluid">
+            <div class="container-calendario">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="calendario-de-eventos">Calendário de Eventos</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="card p-4 shadow">
+                    <div class="row g-4">
+        
+                        <!-- Card 1 -->
+                        <div class="col-md-3">
+                            <div class="card h-100 border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="texto-13">13</span>
+                                    <span class="de-dezembro-2020">de dezembro 2020</span>
+                                </div>
+                                    <small class="a-partir-das-1630">A partir das 16:30</small>
+                                <img src="img/barco.png" class="card-img-top rounded-3" alt="Imagem do evento">
+                                <div class="cards-calendario">
+                                    <h5 class="card-titulo">Como escrever conteúdo sobre suas fotos</h5>
+                                    <span class="card-text-ruas">
+                                        Rua das azaleias, 257 - Jardim Botânico - Sinop/MT
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card 2 -->
+                        <div class="col-md-3">
+                            <div class="card h-100 border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="texto-13">13</span>
+                                    <span class="de-dezembro-2020">de dezembro 2020</span>
+                                </div>
+                                <small class="a-partir-das-1630">A partir das 16:30</small>
+                                <img src="img/montanhas.png" class="card-img-top rounded-3" alt="Imagem do evento">
+                                <div class="cards-calendario">
+                                    <h5 class="card-titulo">Onde expandir seu negócio como fotógrafo: site ou mídia social?</h5>
+                                    <span class="card-text-ruas">
+                                        Rua das azaleias, 257 - Jardim Botânico - Sinop/MT
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card 3 -->
+                        <div class="col-md-3">
+                            <div class="card h-100 border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="texto-13">13</span>
+                                    <span class="de-dezembro-2020">de dezembro 2020</span>
+                                </div>
+                                <small class="a-partir-das-1630">A partir das 16:30</small>
+                                <img src="img/cachoeira.png" class="card-img-top rounded-3" alt="Imagem do evento">
+                                <div class="cards-calendario">
+                                    <h5 class="card-titulo">Como um artista visual redefine o sucesso em design gráfico</h5>
+                                    <span class="card-text-ruas">
+                                        Rua das azaleias, 257 - Jardim Botânico - Sinop/MT
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card 4 -->
+                        <div class="col-md-3">
+                            <div class="card h-100 border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="texto-13">13</span>
+                                    <span class="de-dezembro-2020">de dezembro 2020</span>
+                                </div>
+                                <small class="a-partir-das-1630">A partir das 16:30</small>
+                                <img src="img/floresta.png" class="card-img-top rounded-3" alt="Imagem do evento">
+                                <div class="cards-calendario">
+                                    <h5 class="card-titulo">Comece um blog para atingir seu pico criativo</h5>
+                                    <span class="card-text-ruas">
+                                        Rua das azaleias, 257 - Jardim Botânico - Sinop/MT
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Botão "Veja mais eventos" -->
+                    <div class="row">
+                        <div class="container-botao-eventos">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-4 col-lg-3 col-btn">
+                                <a href="#"class="btn">Veja mais eventos</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Card: Galeria de Vídeos -->
+                <div class="col-12 col-md-6">
+                    <div class="col-box-vinheta">
+                        <span class="vinheta">Galeria de Vídeos</span>
+                    </div>
+                    <a href="#">
+                        <div class="col-box-item">
+                            <div class="card-img">
+                                <img src="img/biblioteca.png" alt="biblioteca" class="img-fluid">
+                                <div class="card-titulo-galeria-videos">
+                                    <span>Como a escrita influencia sua marca pessoal?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Botão: Veja mais vídeos -->
+                    <div class="col-btn mt-3">
+                        <a href="#" class="btn">Veja mais vídeos</a>
+                    </div>
+                </div>
+        
+                <!-- Card: Galeria de Obras -->
+                <div class="col-12 col-md-6">
+                    <div class="col-box-vinheta">
+                        <span class="vinheta">Galeria de Obras</span>
+                    </div>
+                    <a href="#">
+                        <div class="col-box-item">
+                            <div class="card-img">
+                                <figure>
+                                    <img class="img-fluid" src="img/predio.png" alt="Prédio">
+                                </figure>
+                            </div>
+                            <div class="card-titulo-galeria-obras">
+                                <span>Por que não usar os sites prontos?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Botão: Veja mais obras -->
+                    <div class="col-btn mt-3">
+                        <a href="#" class="btn">Veja mais obras</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container-fluid">
+        <div class="container"> 
+            <div class="secao-cidade">
+                <!-- Imagem de fundo em toda a tela -->
+                <img src="img/cidadefundo.png" class="imagem-fundo" alt="Cidade à noite">
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-cidade">
+                                <h1 class="titulo-menor">Conheça a</h1>
+                                <h2 class="subtitulo-cidade">Melhor Cidade do Brasil</h2>
+                                <p class="descricao-cidade">É a sua cidade! Onde tem tudo o que você precisa.</p>
+                                
+                                <div class="botoes-cidade">
+                                    <a href="#" class="botao botao-primario">Conheça a Cidade</a>
+                                    <a href="#" class="botao botao-secundario">Conheça a economia</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       
+    </main>
+    
+            <footer>
+                <div class="rodape-topo">
+                  <div class="container-fluid">
+                    <div class="container">
+                      <div class="row">
+                        <!-- Horário de Atendimento -->
+                        <div class="col-md-4">
+                          <h3 class="rodape-titulo">Horário de Atendimento</h3>
+                          <p class="rodape-texto">Segunda à Sexta, Das 07h às 11h, e das <span>13h</span> às 17h</p>
+                        </div>
+              
+                        <!-- Endereço -->
+                        <div class="col-md-4">
+                          <h3 class="rodape-titulo">Endereço</h3>
+                          <p class="rodape-texto">Av. Praça Leopoldina Wilke, 19 - Centro</p>
+                        </div>
+              
+                        <!-- Telefones de Contato -->
+                        <div class="col-md-4">
+                          <h3 class="rodape-titulo">Fale Conosco</h3>
+                          <p class="rodape-texto">(66) 3526-2000 ou (66) 3526-2001</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Área principal do rodapé com links e categorias -->
+                <div class="rodape-principal">
+                  <div class="container">
+                    <div class="row">
+                      <!-- Imprensa -->
+                      <div class="col-md-3 col-sm-6">
+                        <div class="rodape-coluna">
+                          <h4 class="rodape-categoria">Imprensa</h4>
+                          <ul class="rodape-links">
+                            <li><a href="#">Notícias</a></li>
+                            <li><a href="#">Agenda da Cidade</a></li>
+                            <li><a href="#">Galeria de Fotos</a></li>
+                            <li><a href="#">Galeria de Vídeos</a></li>
+                          </ul>
+                          <h4 class="rodape-categoria mt-4">Contato</h4>
+                          <ul class="rodape-links">
+                            <li><a href="#">Ouvidoria E-SIC</a></li>
+                            <li><a href="#">Telefones Úteis</a></li>
+                          </ul>
+                        </div>
+                      </div>
+              
+                      <!-- Prefeitura -->
+                      <div class="col-md-3 col-sm-6">
+                        <div class="rodape-coluna">
+                          <h4 class="rodape-categoria">Prefeitura</h4>
+                          <ul class="rodape-links">
+                            <li><a href="#">Equipe do Governo</a></li>
+                            <li><a href="#">Fotos da Prefeitura</a></li>
+                            <li><a href="#">Galeria de Prefeitos</a></li>
+                            <li><a href="#">Conheça Nosso Prefeito</a></li>
+                            <li><a href="#">Conheça Nosso Vice Prefeito</a></li>
+                            <li><a href="#">Competência, Estrutura e Organizacional</a></li>
+                          </ul>
+                        </div>
+                      </div>
+              
+                      <!-- Município -->
+                      <div class="col-md-3 col-sm-6">
+                        <div class="rodape-coluna">
+                          <h4 class="rodape-categoria">Município</h4>
+                          <ul class="list-group">
+                            <li><a href="#">Economia</a></li>
+                            <li><a href="#">Símbolos</a></li>
+                            <li><a href="#">Como Chegar</a></li>
+                            <li><a href="#">Galeria de Obras</a></li>
+                            <li><a href="#">História do Município</a></li>
+                            <li><a href="#">Hino, Bandeira e Brasão</a></li>
+                            <li><a href="#">Conheça Nosso Município</a></li>
+                          </ul>
+                        </div>
+                      </div>
+              
+                      <!-- Secretarias -->
+                      <div class="col-md-3 col-sm-6">
+                        <div class="rodape-coluna">
+                          <h4 class="rodape-categoria">Secretarias</h4>
+                          <ul class="rodape-links">
+                            <li><a href="#">Gabinete</a></li>
+                            <li><a href="#">Secretaria Municipal Agricultura e Desenvolvimento Econômico Sustentável</a></li>
+                            <li><a href="#">Secretaria Municipal Cultura e Economia Criativa</a></li>
+                            <li><a href="#">Secretaria Municipal Educação</a></li>
+                            <li><a href="#">Secretaria Municipal Esportes e Lazer</a></li>
+                            <li><a href="#">Secretaria Municipal Administração</a></li>
+                            <li><a href="#">Secretaria Municipal de Assistência Social</a></li>
+                            <li><a href="#">Secretaria Municipal Finanças</a></li>
+                            <li><a href="#">Secretaria Municipal Infraestrutura</a></li>
+                            <li><a href="#">Secretaria Municipal Meio Ambiente e Turismo</a></li>
+                            <li><a href="#">Secretaria Municipal Planejamento</a></li>
+                            <li><a href="#">Secretaria Municipal Saúde</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <footer class="container-fluid">
+                        <!-- Mapa como background clicável -->
+                        <div class="row">
+                            <div class="col-12 mapa position-relative">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62959.68704496698!2d-55.53326524017304!3d-11.86005894362711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a70e0f3c3b339f%3A0x48c1539616f33046!2sSinop%2C%20MT!5e0!3m2!1spt-BR!2sbr!4v1710870867881!5m2!1spt-BR!2sbr" 
+                                    width="100%" 
+                                    height="200" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                                <a 
+                                    href="https://www.google.com/maps/place/Sinop,+MT" 
+                                    target="_blank" 
+                                    class="position-absolute top-0 start-0 w-100 h-100 d-block" 
+                                    style="z-index: 10;" 
+                                    aria-label="Abrir localização no Google Maps">
+                                    <span class="visually-hidden">Abrir localização no Google Maps</span>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <!-- Informações de copyright e logo -->
+                        <div class="row mt-3 align-items-center text-center text-md-start">
+                            <div class="col-md-6">
+                                <small class="texto-direitos">
+                                    ©2025 - Nome do cliente - Todos os direitos reservados.
+                                </small>
+                            </div>
+                            <div class="col-md-6 text-md-end">
+                                <img src="img/logo-mpx.png" alt="MPX" height="30">
+                            </div>
+                        </div>
+                </footer>
+                
+        
+              
+</body>
+</html>
