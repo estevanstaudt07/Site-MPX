@@ -1,0 +1,1299 @@
+@font-face {
+  font-family: "Inter-Regular";
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  font-display: swap;
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  font-weight: "Bold";
+  font-display: swap;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.ttf") format("truetype");
+}
+
+.fluid-acessibilidade{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.acessibilidade-buttons {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+   	margin-top: 8px;
+   	margin-bottom: 8px;
+}
+
+
+.acessibilidade-buttons li {
+    margin-right: 30px;/* Espaço entre os botões */
+}
+.acessibilidade-buttons li:last-child {
+	margin-right: 0
+}
+
+.acessibilidade-buttons a {
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    border:solid 1px #eee;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+
+}
+.card-links {
+	border-radius: 24px;
+	background-color: #eceff1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 22px;
+	width: auto;
+	text-align: center;
+	width: 166px;
+  	height: 94px;
+
+}
+.card-links span {
+	display: block;
+	text-align: center;
+	font-family: "Inter-Regular";
+	font-size: 16px;
+	font-weight: bold;
+  	line-height: 1.13;
+  	letter-spacing: -0.32px;
+  	margin-top: 5px;
+}
+
+.fluid-logo{
+	background-color: #01579b;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-radius: 24px 24px 0 0;
+
+}
+
+ .fluid-menu{
+  background-color: #0277bd;
+  
+}
+
+.navbar-nav.menu-link {
+
+  font-family: "Inter-SemiBold";
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+  gap: 120px;
+}
+.menu-topo {
+  height: 47px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+.Prefeitura li:last-child{
+  margin-right: 0;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  position: relative;
+  z-index: 1040;
+}
+.dropdown-menu {
+  background-color: white;
+  z-index: 1100 !important;
+}
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover {
+  background-color: #0a3c2e;
+  color: white;
+}
+/*.Municipio {
+  width: 76px;
+  height: 19px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+.Municipio {
+  width: 95px;
+  height: 47px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 0;
+}
+
+.Secretarias {
+  width: 89px;
+  height: 19px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+.Secretarias {
+  width: 105px;
+  height: 47px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+}
+.Noticias {
+  width: 64px;
+  height: 19px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+}
+.Noticias {
+  width: 80px;
+  height: 47px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+.Imprensa {
+  width: 72px;
+  height: 19px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+.Imprensa{
+	width: 92px;
+	height: 47px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+.Contato {
+  width: 63px;
+  height: 19px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+.Contato {
+	width: 80px;
+  height: 47px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+}*/
+
+.Menus {
+    display: flex;
+    background-color: #0277bd; /* Cor de fundo da barra de navegação
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navegação li {
+    display: flex;
+    margin-right: 20px; /* Espaçamento entre os itens da lista */
+    margin-top: 10px;
+
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: Inter;
+  	font-size: 16px;
+  	font-weight: 600;
+  	font-stretch: normal;
+  	font-style: normal;
+    padding: 8px 16px; /* Espaçamento interno nos links */
+    border-radius: 5px; /* Cantos arredondados nos links */
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu a {
+    text-decoration: none;
+}
+
+/* Adicione esta regra para posicionar o texto abaixo do span */
+.menu span {
+    display: block;
+}
+
+/* Estilo específico para o item "Portal Transparencia" */
+.menu .Transparencia {
+    margin-top: 5px; /* Ajuste a margem conforme necessário */
+}
+
+img.Vitrne {
+  width: 1890px;
+  height: 485px;
+  flex-grow: 0;
+  margin: 173px 0 0;
+  padding: 48px 0 30px 64px;
+  object-fit: contain;
+}
+.fluid-serviços {
+  height: 120px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 18px 307px 16px 309px;
+  background-color: #01579b;
+}
+.card-serviços {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+
+  }
+  .cards-serviços {
+    height: 86px;
+    flex-grow: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 24px;
+    background-color: #eceff1;
+  }
+  
+  .serviço1 {
+    width: 150px;
+    height: 38px;
+    flex-grow: 0;
+    opacity: 0.8;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #001c33;
+  }
+  .Noticias {
+    width: 129px;
+    height: 39px;
+    flex-grow: 0;
+    margin: 0 324px 29px 39px;
+    padding: 22px 4px 1px 0px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #01579b;
+  }
+  .data-bg {
+    width: 128px;
+    height: 32px;
+    flex-grow: 0;
+    padding: 6px 24px 6px 26px;
+    background-color: #4fc3f7;
+    position: absolute;
+    border-radius: 20px;
+    top: 32px;   /* Move a data para baixo */
+    left: 30px;  /* Move a data para a direita */
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #001c33;
+  }
+  .data-bg2 {
+    width: 128px;
+    height: 32px;
+    flex-grow: 0;
+    padding: 6px 24px 6px 26px;
+    background-color: #4fc3f7;
+    position: absolute;
+    border-radius: 20px;
+    top: 16px;   /* Move a data para baixo */
+    left: 30px;  /* Move a data para a direita */
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #001c33;
+  }
+
+
+  .títuloimagem1 {
+    height: 48px;
+    flex-grow: 0;
+    margin: 16px 30px 62px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+  }
+  .títuloimagem2 {
+    height: 48px;
+    flex-grow: 0;
+    margin: 16px 30px 78px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+  }
+  .titulo-imagem11 {
+    width: 234px;
+    height: 92px;
+    flex-grow: 0;
+    margin: 20px 15px 0;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+  }
+  .titulo-imagem12 {
+    width: 234px;
+    height: 92px;
+    flex-grow: 0;
+    margin: 20px 15px 0;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+  }
+  .titulo-imagem13 {
+    width: 234px;
+    height: 92px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+  }
+  .titulo-imagem14 {
+    height: 92px;
+    flex-grow: 0;
+    margin: 20px 15px 0 29px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+  }
+  .btn {
+    width: 226px;
+    height: 48px;
+    border-radius: 16px;
+    background-color: #FFC107;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: black; /* Cor do texto */
+    margin: 32px auto 32px auto; /* Centraliza horizontalmente */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #331600;
+}
+
+  .imgbanner-01 {
+    height: 160px;
+    flex-grow: 0;
+    margin: 0 30px 0 0;
+    object-fit: contain;
+  } 
+  .imgbanner-02 {
+    height: 160px;
+    flex-grow: 0;
+    margin: 0 0 0 30px;
+    object-fit: contain;
+  }
+  /* Estilos para a Seção de Galeria de Fotos */
+
+/* Cores base */
+:root {
+  --cor-primaria: #01579b;
+  --cor-secundaria: #fff;
+  --cor-destaque: #ffc107;
+  --cor-texto: #333;
+  --cor-borda: #ddd;
+  --cor-hover: #004e8c;
+}
+
+/* Estilos gerais da seção */
+.secao-galeria-fotos {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  padding: 40px 0;
+  border-radius: 16px;
+  height: 584px;
+  margin: 32px 0;
+}
+
+.titulo-galeria {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Estilos dos cartões */
+.cartao-galeria {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--cor-secundaria);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.cartao-galeria:hover {
+  transform: translateY(-5px);
+}
+
+/* Container de imagem */
+.imagem-container {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+
+.cartao-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Efeito de zoom na imagem ao passar o mouse */
+.cartao-galeria:hover .cartao-imagem {
+  transform: scale(1.1);
+}
+
+/* Data de publicação */
+.data-publicacao {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 102, 178, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* Conteúdo do cartão */
+.cartao-conteudo {
+  padding: 15px;
+}
+
+.cartao-titulo {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cor-texto);
+  line-height: 1.4;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+/* Estilo dos links */
+.cartao-link {
+  text-decoration: none;
+  color: var(--cor-texto);
+  display: block;
+}
+
+.cartao-link:hover .cartao-titulo {
+  color: var(--cor-primaria);
+  text-decoration: underline;
+}
+
+/* Botões de navegação */
+.posicao-relativa {
+  position: relative;
+}
+
+.botao-navegacao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.botao-navegacao:hover {
+  background-color: var(--cor-destaque);
+}
+
+.botao-anterior {
+  left: -20px;
+}
+
+.botao-proximo {
+  right: -20px;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+  .cartao-galeria {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .titulo-galeria {
+    font-size: 24px;
+  }
+  
+  .imagem-container {
+    height: 160px;
+  }
+  
+  .botao-navegacao {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .titulo-galeria {
+    font-size: 22px;
+  }
+  
+  .cartao-titulo {
+    font-size: 14px;
+  }
+  
+  .botao-anterior {
+    left: 10px;
+  }
+  
+  .botao-proximo {
+    right: 10px;
+  }
+}
+  .container-galeria {
+    height: 584px;
+    flex-grow: 0;
+    margin: 32px 0;
+    padding: 48px 0;
+    border-radius: 16px;
+    background-color: #01579b;
+  }
+  .texto-galeria{
+    width: 253px;
+    height: 39px;
+    flex-grow: 0;
+    margin: 48px 0 0 372px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+      
+  .img-margin{
+      width: 610px;
+      height: 342px;
+      flex-grow: 0;
+      margin: 29px 30px 30px 0;
+      padding: 30px; 
+  }
+ 
+  .img.foto-center {
+    width: 610px;
+    height: 342px;
+    flex-grow: 0;
+    margin: 29px 30px 30px 15px;
+    padding: 30px;
+    object-fit: contain;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), #000);
+  }
+  .titulo-imagem{
+      height: 26px;
+      flex-grow: 0;
+      margin: 61px 0 0;
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--white);
+    
+  }
+.card-galeria{
+  border-radius: 24px;
+}
+/* Estilo para o card */
+.card {
+  position: relative;
+}
+
+/* Overlay para o título */
+.card-title-overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.card-calendário{
+    height: 484px;
+    flex-grow: 0;
+    margin: 0 0 30px;
+    border-radius: 24px;
+    border: solid 1px var(--0277-bd);
+    background-color: var(--white)
+}
+
+/* Badge com letra M */
+.badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.calendario-de-eventos {
+  width: 352px;
+  height: 39px;
+  flex-grow: 0;
+  margin: 0 1166px 29px 372px;
+  padding: 22px 8px 1px 0px;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #01579b;
+}
+.container-calendario{
+  
+}
+.texto-datas-calendario{
+    width: 223px;
+    height: 29px;
+    flex-grow: 0;
+    margin: 7px 125px 7px 5px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #01579b;
+}
+.texto-13{
+    width: 37px;
+    height: 39px;
+    flex-grow: 0;
+    margin: 0 5px 4px 0;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #01579b;
+}
+.de-dezembro-2020 {
+  width: 223px;
+  height: 29px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #01579b;
+}
+.a-partir-das-1630 {
+  width: 332px;
+  height: 24px;
+  flex-grow: 0;
+  margin: 4px 58px 12px 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #01579b;
+}
+.cards-calendario{
+  margin: 17px 0 12px;
+
+}
+.card-titulo{
+    flex-grow: 0;
+    margin: 17px 0 12px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+}
+.card-text-ruas{
+    width: 390px;
+    height: 40px;
+    flex-grow: 0;
+    margin: 12px 0 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #616161;
+}
+.container .col-md-3 {
+  position: relative;
+}
+/* Divisórias verticais entre os cards */
+.container .col-md-3:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 5%; /* Começa a 5% do topo */
+  right: 0;
+  height: 90%; /* 90% da altura para não chegar nas bordas */
+  width: 1px;
+  background-color: #eeee; /* Cor cinza clara */
+}
+
+/* Garantir que os cards tenham altura igual */
+.container .card.h-100 {
+  height: 100% !important;
+}
+.col-box-vinheta{
+      width: 276px;
+      height: 39px;
+      flex-grow: 0;
+      margin: 0 282px 29px 0;
+      padding: 22px 7px 1px 0;
+      font-family: Inter;
+      font-size: 32px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #01579b;
+}
+.col-box-vinheta-fotos{
+  width: 276px;
+  height: 39px;
+  flex-grow: 0;
+  margin: 0 282px 29px 0;
+  padding: 22px 7px 1px 0;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.vinheta {
+  width: 260px;
+  height: 39px;
+  flex-grow: 0;
+  padding: 22px 4px 1px 0;
+}
+.card-titulo-galeria-videos{
+    width: 498px;
+    height: 56px;
+    flex-grow: 0;
+    margin: 24px 30px 0;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+.card-titulo-galeria-obras {
+  width: 498px;
+  height: 56px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.col-box-item {
+  border-radius: 24px; /* Borda arredondada */
+  transition: box-shadow 0.3s ease; /* Efeito suave ao passar o mouse */
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+}
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Seção principal com a imagem de fundo */
+.secao-cidade {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Imagem de fundo */
+.imagem-fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 24px;
+}
+
+/* Cartão com informações da cidade */
+.card-cidade {
+  height: 386px;
+  flex-grow: 0;
+  padding: 44px 0 76px 160px;
+  background-color: #fafafa;
+  border-radius: 0 0 24px 24px;;
+}
+
+/* Estilos de texto */
+.titulo-menor {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.subtitulo-cidade {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.descricao-cidade {
+    width: 610px;
+    height: 24px;
+    flex-grow: 0;
+    margin: 39px 160px 39px 0;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+  }
+
+/* Botões */
+.botoes-cidade {
+    width: 533px;
+    height: 48px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 0;
+}
+
+.botoes-cidade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.botao {
+  width: 533px;
+  height: 48px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.botao-primario {
+  width: 241px;
+  background-color: #ffd54f;
+  color: #331600;
+}
+
+.botao-primario:hover {
+  background-color: #f6f940;
+  color: #000;
+}
+
+.botao-secundario {
+  width: 262px;
+  background-color: #039be5;
+  color: #001c33;
+}
+
+.botao-secundario:hover {
+  background-color: #22adf3;
+  color: #001c33;
+}
+
+
+/* Overlay do container para melhorar a legibilidade se necessário */
+.container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .cartao-cidade {
+      margin: 3rem 1.5rem;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartao-cidade {
+      margin: 2rem 1rem;
+      padding: 2rem;
+  }
+  
+  .botoes-cidade {
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .botao {
+      width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo-cidade {
+      font-size: 1.5rem;
+  }
+  
+  .subtitulo-cidade {
+      font-size: 1.8rem;
+  }
+}
+/* Estilos para o Footer */
+
+/* Estilo base do footer */
+.rodape {
+  font-family: Inter; 
+  color: #ffffff;
+}
+
+/* Parte superior do rodapé */
+.rodape-topo {
+  background-color: #0277bd; /* Azul fraco */
+  padding: 30px 0;
+  border-radius: 24px 24px 0 0;
+  margin-top: 200px;
+}
+
+/* Parte principal do rodapé */
+.rodape-principal {
+  background-color: #01579b; /* Azul mais escuro */
+  padding: 30px 0 40px;
+}
+
+/* Títulos principais do rodapé */
+.rodape-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+/* Texto padrão do rodapé */
+.rodape-texto {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Inter;
+  color: #ffffff;
+}
+
+
+/* Títulos das categorias */
+.rodape-categoria {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+}
+
+/* Container das colunas do rodapé */
+.rodape-coluna {
+  width: 264px;
+  flex-grow: 0;
+  margin: 0 31px 30px 0;
+}
+
+/* Lista de links */
+.rodape-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Itens da lista de links */
+.rodape-links li {
+  margin-bottom: 8px;
+}
+
+/* Links no rodapé */
+.rodape-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Efeito hover nos links */
+.rodape-links a:hover {
+  color: #c0c0c0;
+  text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 767px) {
+  .rodape-topo {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .rodape-coluna {
+    margin-bottom: 30px;
+  }
+  
+  .rodape-categoria {
+    text-align: center;
+  }
+}
+/* Remover as linhas de separação verticais */
+.rodape-principal .col-md-3 {
+  border: none !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+/* Remover as linhas de separação horizontais */
+.rodape-links li {
+  border: none !important;
+  border-bottom: none !important;
+}
+
+/* Remover outras possíveis bordas */
+.rodape-coluna {
+  border: none !important;
+}
+
+.row {
+  border: none !important;
+}
+
+.texto-direitos{
+    width: 950px;
+    height: 24px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #212529;
+}
