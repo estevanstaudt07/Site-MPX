@@ -1,0 +1,412 @@
+@font-face {
+  font-family: "Inter-Regular";
+  font-display: swap;
+  src:
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff"),
+    url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  font-display: swap;
+  src:
+    url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Inter-ExtraBold.woff") format("woff"),
+    url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  font-display: swap;
+  src:
+    url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff"),
+    url("../fonts/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  font-weight: "Bold";
+  font-display: swap;
+  src:
+    url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff"),
+    url("../fonts/Inter-Bold.ttf") format("truetype");
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+background-color:#fafafa;
+}
+.fluid-acessibilidade {
+  @media screen and (max-width: 1399.9px) {
+    display: none;
+  }
+}
+
+/* Ajuste dos botões de acessibilidade */
+.acessibilidade-buttons {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+  gap: 30px; /* Espaço entre os itens */
+  margin: 8px 0;
+}
+
+.acessibilidade-buttons li {
+  list-style: none;
+  display: flex;
+}
+.acessibilidade-buttons li a {
+  text-decoration: none;
+}
+
+.fonte-acess {
+  font-family: "Inter-Regular";
+}
+
+/* Ajuste do link dentro dos botões */
+.acessibilidade-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 38px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #dee2e6;
+  font-family: "Inter-SemiBold";
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+/* Ajuste do campo de pesquisa */
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 166px; /* Mesmo tamanho dos botões */
+  height: 38px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+}
+
+/* Input menor para caber no layout */
+.campo-pesquisa {
+  flex-grow: 1;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-family: "Inter-SemiBold";
+  font-weight: 600;
+  font-size: 12px;
+  height: 100%;
+}
+
+/* Ajuste do botão de pesquisa */
+.botao-pesquisa {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #555;
+  height: 100%;
+}
+/* Efeito hover nas opções de acessibilidade */
+.acessibilidade-buttons a:hover {
+  background-color: #0277bd;
+  color: #fff !important;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+/* Efeito de clique nas opções de acessibilidade */
+.acessibilidade-buttons a:active {
+  background-color: transparent;
+  color: #01579b !important;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+/* Hover no botão de pesquisa */
+.botao-pesquisa:hover {
+  background-color: #0277bd;
+  background-image: none;
+  border-image-slice: 0;
+  cursor: pointer;
+}
+
+/* Clique no botão de pesquisa */
+.botao-pesquisa:active {
+  background-color: #01579b;
+  color: #fff !important;
+}
+/* Ícone da lupa no hover do botão */
+.botao-pesquisa:hover .bi {
+  color: #fff !important;
+}
+
+/* Ícone da lupa no clique do botão */
+.botao-pesquisa:active .bi {
+  color: #fff !important;
+}
+
+//COMEÇANDO O SCSS APARTIR DAQUI
+
+//CABEÇALHO
+
+.card-links {
+  border-radius: 24px;
+  background-color: #eceff1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //padding: 22px;
+  width: auto;
+  text-align: center;
+  height: 94px;
+  transition: 0.6s;
+
+  figure {
+    margin-bottom: 0px;
+  }
+  .texto-card {
+    font-size: 16px;
+    font-family: "Inter-Bold";
+    text-align: center;
+    display: block;
+  }
+}
+
+//MENU
+
+.nav-menu{
+  position: absolute;
+}
+
+.fluid-logo {
+  background-color: #01579b;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 24px 24px 0 0;
+}
+
+.fluid-menu {
+  background-color: #0277bd;
+}
+
+
+.ajuste-lista-menu{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  a{
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0277bd;
+    font-family: "Inter-SemiBold";
+  }
+}
+
+//Capa serviços//
+.fluid-servicos{
+  background-color: #01579b;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  .row-servicos{
+    .card-servicos{
+      background-color: #eceff1;
+      text-align: center;
+      height: 86px;
+      padding: 8px;
+      margin-bottom: 16px;
+      margin-top: 18px;
+      border-radius: 24px;
+      justify-content: center;
+
+      i{
+        font-size: 32px;
+        width: 32px;
+        height: 32px;
+        display: inline-block; /* Garante que width e height sejam aplicados */
+        text-align: center;
+        line-height: 32px; /* Alinha o ícone verticalmente */
+      }
+      .texto-servico{
+        font-family: "Inter-SemiBold";
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+//CAPA - NOTICIAS
+.row-vinheta {
+	margin-top: 30px;
+	margin-bottom: 30px;
+  
+	.vinheta-noticias {
+	  position: relative; // <-- adicionar isso aqui!!
+	  font-size: 32px;
+	  font-family: "Inter-Bold";
+	  color: #01579b;
+  
+	  &::after {
+		content: "";
+		width: 65%;
+		height: 16px;
+		border-radius: 24px;
+		background-color: #e1f5fe;
+		position: absolute;
+		z-index: -1;
+		top: 57%;
+		left: 0;
+		
+	  }
+	}
+  }
+
+.card-galeria{
+	border-radius: 24px;
+	position: relative;
+	border: 1px solid transparent;
+	border: solid 1px #eeeeee;
+
+	@media screen and (max-width: 991.9px) {
+    margin-bottom: 30px;
+    }
+
+	.data-bg{
+		position: absolute;
+		background-color: #4fc3f7;
+		border-radius: 24px;
+		padding: 6px 24px 6px 26px;
+		top: 32px; /* Move a data para baixo */
+  		left: 30px; /* Move a data para a direita */
+	}
+
+	.títuloimagem{
+		font-size: 20px;
+		color: #616161;
+		font-family: "Inter-SemiBold";
+		padding: 20px;
+		display: flex;
+		min-height: 100px;
+
+		@media screen and (max-width: 1199.9px) {
+			min-height: 131px;
+		}
+	
+	}
+}
+.fluid-noticias{
+	.card-noticias{
+	  border-radius: 16px;
+	  background-color: white;
+	  margin-top: 32px;
+	  padding: 16px 15px;
+	  border: solid 1px #eeeeee;
+
+
+	  .slick-slide {
+		padding: 0 10px;
+		box-sizing: border-box;
+	  }
+	
+	  .col-noticias{
+		position: relative;
+		box-sizing: border-box;
+
+	  }
+	  
+		  .data-noticias{
+			background-color: #4fc3f7;
+			padding: 6px 24px 6px 26px;
+			border-radius: 8px;
+			position: absolute;
+			top: 16px;
+			left: 29px;
+			font-family: "Inter-Regular";
+			font-size: 14px;
+			color: #000;
+	
+		}
+		  .texto-noticias{
+			font-family: "Inter-SemiBold";
+			font-size: 20px;
+			color: #616161;
+			text-align: left;
+			font-weight: 400;
+			padding: 20px;
+			letter-spacing: normal;
+			min-height: 90px;
+			@media screen and (max-width: 1199.9px) {
+				font-size: 18px;
+			}
+		
+	
+		}
+	}
+
+	.row-btn{
+		margin-top: 32px;
+		margin-bottom: 32px;
+		
+		.col-btn{
+			background-color: #ffb300;
+			border-radius: 16px;
+			text-align: center;
+			padding: 14px 40px 14px 44px;
+
+			.texto-botao{
+				font-size: 16px;
+				font-family: "Inter-Bold";
+				color: #000;
+			}
+		}
+	}
+}
+
+.row-vinheta-calendario {
+	margin-top: 32px;
+	margin-bottom: 29px;
+  
+	.vinheta-calendario {
+	  position: relative
+	  font-size: 32px;
+	  font-family: "Inter-Bold";
+	  color: #01579b;
+  
+	  &::after {
+		content: "";
+		width: 65%;
+		height: 16px;
+		border-radius: 24px;
+		background-color: #e1f5fe;
+		position: absolute;
+		z-index: -1;
+		top: 57%;
+		left: 0;
+		
+	  }
+	}
+  }
